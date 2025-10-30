@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>        
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+    <!-- Title -->
+    <title>Karl Kumm University Journal Repository</title>
+
+    <!-- Favicon -->
+    <link href="karl-kumm-university-logo.png" rel="icon" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Mobile Menu -->
+    <link href="css/mmenu.css" rel="stylesheet" type="text/css" />
+    <link href="css/mmenu.positioning.css" rel="stylesheet" type="text/css" />
+
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="layout-v3">
+    
+    <!-- Start: Header Section -->
+    <header id="header" class="navbar-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="menu-wrap">
+                        <div class="navbar-header">
+                            <div class="navbar-brand">
+                                <h1>
+                                    <a href="index.html">
+                                        <img src="images/karl-kumm-university-logo.png" style="height:100px; width:80px" alt="Karl Kumm University" />
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- Navigation -->
+                        <div class="navbar-collapse hidden-sm hidden-xs">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="journals.html">Journals</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="articles.html">Articles</a>
+                                </li>
+								<li class="dropdown">
+                                    <a href="archive.html">Archive</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="signin.html">Login/Register</a>
+                                </li>
+                            </ul>
+                            <!-- Header Topbar -->
+                            
+                            <!-- Header Topbar -->
+                        </div>
+                        <div class="header-socialbar hidden-sm hidden-xs">
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-menu hidden-md hidden-lg">
+                        <a href="#mobile-menu"><i class="fa fa-navicon"></i></a>
+                        <div id="mobile-menu">
+                            <ul>
+                                <li class="mobile-title">
+                                    <h4>Navigation</h4>
+                                    <a href="#" class="close"></a>
+                                </li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="journals.html">Journals</a></li>
+                                <li><a href="articles.html">Articles</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="signin.html">Login/Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End: Header Section -->
+
+    <!-- Start: Slider Section - Modified for Repository -->
+    <div data-ride="carousel" class="carousel slide" id="home-v1-header-carousel">
+        <!-- Carousel slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <figure>
+                    <img alt="Journal Repository" src="images/header-slider/home-v3/header-slide.jpg" />
+                </figure>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h2>Karl Kumm University Journal Repository</h2>
+                        <p>Advancing knowledge through <strong>Open Access,</strong> <strong>Peer-Reviewed Research,</strong> and <strong>Global Scholarship.</strong></p>
+                        <div class="filter-box">
+                            <form action="search.html" class="banner-filter-box" method="get">
+                                <div class="form-group">
+                                    <label class="sr-only" for="keywords">Search by Keyword</label>
+                                    <input class="form-control" placeholder="Search by Keyword" id="keywords" name="keywords" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <select name="journal" id="journal" class="form-control">
+                                        <option>All Journals</option>
+                                        <option>Journal of Applied Sciences</option>
+                                        <option>International Business Review</option>
+                                        <option>Health Sciences Research</option>
+                                        <option>Social Studies Quarterly</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="category" id="category" class="form-control">
+                                        <option>All Categories</option>
+                                        <option>Science & Technology</option>
+                                        <option>Business & Economics</option>
+                                        <option>Health Sciences</option>
+                                        <option>Social Sciences</option>
+                                        <option>Arts & Humanities</option>
+                                    </select>
+                                </div>
+                                <div class="clearfix"></div>
+                                <input class="form-control" type="submit" value="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Slider Section -->
+
+    <!-- Start: Features - Modified for Repository -->
+    <section class="features">
+        <div class="container-fluid">
+            <div class="row">
+                <ul>
+                    <li class="bg-yellow">
+                        <div class="feature-box">
+                            <i class="yellow"></i>
+                            <h3>Browse Journals</h3>
+                            <p>Explore our collection of peer-reviewed academic journals across various disciplines.</p>
+                            <a class="yellow" href="journals.html">
+                                View Journals <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="bg-light-green">
+                        <div class="feature-box">
+                            <i class="light-green"></i>
+                            <h3>Submit Research</h3>
+                            <p>Contribute to academic discourse by submitting your manuscript for publication.</p>
+                            <a class="light-green" href="submit.html">
+                                Submit Paper <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="bg-blue">
+                        <div class="feature-box">
+                            <i class="blue"></i>
+                            <h3>Latest Articles</h3>
+                            <p>Access the most recent publications and research findings from our journals.</p>
+                            <a class="blue" href="articles.html">
+                                Read Articles <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="bg-red">
+                        <div class="feature-box">
+                            <i class="red"></i>
+                            <h3>For Authors</h3>
+                            <p>Guidelines and resources for authors interested in publishing with us.</p>
+                            <a class="red" href="authors.html">
+                                Author Guidelines <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="bg-violet">
+                        <div class="feature-box">
+                            <i class="violet"></i>
+                            <h3>Open Access</h3>
+                            <p>All our content is freely available to read, download, and share.</p>
+                            <a class="violet" href="about.html">
+                                Learn More <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="bg-green">
+                        <div class="feature-box">
+                            <i class="green"></i>
+                            <h3>Peer Review</h3>
+                            <p>Rigorous peer-review process ensuring high-quality academic standards.</p>
+                            <a class="green" href="review.html">
+                                Review Process <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End: Features -->
+
+    <!-- Start: Welcome Section - Modified for Repository -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="welcome-wrap">
+                        <div class="welcome-text">
+                            <h2 class="section-title">About Our Repository</h2>
+                            <span class="underline left"></span>
+                            <p>The Karl Kumm University Journal Repository is a comprehensive digital platform dedicated to preserving and providing open access to scholarly research. Our mission is to advance knowledge by making high-quality academic work freely available to researchers, students, and the general public worldwide.</p>
+                            <p>We host peer-reviewed journals across multiple disciplines, maintaining the highest standards of academic excellence while promoting the principles of open science and collaborative research.</p>
+                            <a class="btn btn-dark-gray" href="about.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="welcome-image"></div>
+    </section>
+    <!-- End: Welcome Section -->
+
+    <!-- Start: Repository Statistics -->
+    <section class="newsletter section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="center-content">
+                        <h2 class="section-title">Repository Statistics</h2>
+                        <span class="underline center"></span>
+                        <p class="lead">Tracking our impact in the academic community</p>
+                    </div>
+                    <div class="stats-container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-item">
+                                    <div class="stat-number">42</div>
+                                    <div class="stat-label">Journals</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-item">
+                                    <div class="stat-number">12,500</div>
+                                    <div class="stat-label">Articles</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-item">
+                                    <div class="stat-number">8,500</div>
+                                    <div class="stat-label">Authors</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="stat-item">
+                                    <div class="stat-number">245,000</div>
+                                    <div class="stat-label">Downloads</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Repository Statistics -->
+
+    <!-- Start: Featured Journals Section -->
+    <section class="category-filter section-padding">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="section-title">Featured Journals</h2>
+                <span class="underline center"></span>
+                <p class="lead">Explore our most prominent academic publications across various disciplines</p>
+            </div>
+            <div class="filter-buttons">
+                <div class="filter btn" data-filter="all">All Journals</div>
+                <div class="filter btn" data-filter=".sciences">Sciences</div>
+                <div class="filter btn" data-filter=".business">Business</div>
+                <div class="filter btn" data-filter=".health">Health Sciences</div>
+                <div class="filter btn" data-filter=".social">Social Sciences</div>
+            </div>
+        </div>
+        <div id="category-filter">
+            <ul class="category-list">
+                <li class="category-item sciences">
+                    <figure>
+                        <img src="images/category-filter/home-v1/category-filter-img-01.jpg" alt="Journal of Applied Sciences" />
+                        <figcaption class="bg-blue">
+                            <div class="info-block">
+                                <h4>Journal of Applied Sciences</h4>
+                                <span class="author"><strong>ISSN:</strong> 1234-5678</span>
+                                <span class="author"><strong>Publisher:</strong> KKU Press</span>
+                                <div class="rating">
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                </div>
+                                <p>A peer-reviewed journal publishing original research in all areas of applied sciences and engineering. Focus on practical applications and innovative methodologies.</p>
+                                <a href="journal-detail.html">View Journal <i class="fa fa-long-arrow-right"></i></a>
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-book"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-download"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-share-alt"></i>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="category-item business">
+                    <figure>
+                        <img src="images/category-filter/home-v1/category-filter-img-02.jpg" alt="International Business Review" />
+                        <figcaption class="bg-blue">
+                            <div class="info-block">
+                                <h4>International Business Review</h4>
+                                <span class="author"><strong>ISSN:</strong> 2345-6789</span>
+                                <span class="author"><strong>Publisher:</strong> KKU Press</span>
+                                <div class="rating">
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                </div>
+                                <p>Focusing on global business strategies, management practices, and economic analysis. Publishes research on emerging markets and international trade.</p>
+                                <a href="journal-detail.html">View Journal <i class="fa fa-long-arrow-right"></i></a>
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-book"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-download"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-share-alt"></i>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="category-item health">
+                    <figure>
+                        <img src="images/category-filter/home-v1/category-filter-img-03.jpg" alt="Health Sciences Research" />
+                        <figcaption class="bg-blue">
+                            <div class="info-block">
+                                <h4>Health Sciences Research</h4>
+                                <span class="author"><strong>ISSN:</strong> 3456-7890</span>
+                                <span class="author"><strong>Publisher:</strong> KKU Press</span>
+                                <div class="rating">
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                </div>
+                                <p>Publishing cutting-edge research in medicine, public health, and biomedical sciences. Includes clinical studies and public health interventions.</p>
+                                <a href="journal-detail.html">View Journal <i class="fa fa-long-arrow-right"></i></a>
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-book"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-download"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-share-alt"></i>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="category-item social">
+                    <figure>
+                        <img src="images/category-filter/home-v1/category-filter-img-04.jpg" alt="Social Studies Quarterly" />
+                        <figcaption class="bg-blue">
+                            <div class="info-block">
+                                <h4>Social Studies Quarterly</h4>
+                                <span class="author"><strong>ISSN:</strong> 4567-8901</span>
+                                <span class="author"><strong>Publisher:</strong> KKU Press</span>
+                                <div class="rating">
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                    <span>☆</span>
+                                </div>
+                                <p>Interdisciplinary journal covering sociology, anthropology, political science, and cultural studies. Emphasizes contemporary social issues and policy implications.</p>
+                                <a href="journal-detail.html">View Journal <i class="fa fa-long-arrow-right"></i></a>
+                                <ol>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-book"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-download"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-share-alt"></i>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- End: Featured Journals Section -->
+
+    <!-- Start: Recent Articles Section -->
+    <section class="latest-blog">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="section-title">Recent Articles</h2>
+                <span class="underline center"></span>
+                <p class="lead">Latest publications from our journals</p>
+            </div>
+            <div class="tabs-container">
+                <div class="tabs-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="#" class="bg-yellow">
+                                <div class="title">
+                                    <i class="yellow"></i>
+                                    <h3>Science</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-light-green">
+                                <div class="title">
+                                    <i class="light-green"></i>
+                                    <h3>Business</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-blue">
+                                <div class="title">
+                                    <i class="blue"></i>
+                                    <h3>Health</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-red">
+                                <div class="title">
+                                    <i class="red"></i>
+                                    <h3>Social</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabs-list">
+                    <div class="tab-content active">
+                        <article>
+                            <figure>
+                                <img src="images/latest-blog-img-home-v1.jpg" alt="Recent Article">
+                                <figcaption>
+                                    <a href="#.">
+                                        <span class="date">15</span>
+                                        <span class="month">Mar</span>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="post-detail">
+                                <div class="info-bar">
+                                    <div class="comments">
+                                        <a href="#">
+                                            <i class="fa fa-eye"></i> 180
+                                        </a>
+                                    </div>
+                                    <div class="likes">
+                                        <a href="#">
+                                            <i class="fa fa-download"></i> 45
+                                        </a>
+                                    </div>
+                                    <div class="viewed">
+                                        <a href="#">
+                                            <i class="fa fa-calendar"></i> 2025
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4>Machine Learning Approaches for Climate Change Prediction</h4>
+                                <div class="author">
+                                    <a href="#">
+                                        <i class="fa fa-user"></i> Dr. Sarah Johnson, Prof. Michael Chen
+                                    </a>
+                                </div>
+                                <p>This study explores novel machine learning techniques for improving climate change prediction models. Our approach combines convolutional neural networks with traditional statistical methods to achieve higher accuracy in long-term climate forecasting...</p>
+                                <a class="btn btn-dark-gray" href="article-detail.html">Read Abstract</a>
+                                <small class="access-note">Full access for logged-in users</small>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tab-content">
+                        <article>
+                            <figure>
+                                <img src="images/latest-blog-img-home-v1-2.jpg" alt="Recent Article">
+                                <figcaption>
+                                    <a href="#.">
+                                        <span class="date">12</span>
+                                        <span class="month">Mar</span>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <div class="post-detail">
+                                <div class="info-bar">
+                                    <div class="comments">
+                                        <a href="#">
+                                            <i class="fa fa-eye"></i> 156
+                                        </a>
+                                    </div>
+                                    <div class="likes">
+                                        <a href="#">
+                                            <i class="fa fa-download"></i> 32
+                                        </a>
+                                    </div>
+                                    <div class="viewed">
+                                        <a href="#">
+                                            <i class="fa fa-calendar"></i> 2023
+                                        </a>
+                                    </div>
+                                </div>
+                                <h4>The Impact of Remote Work on Organizational Culture</h4>
+                                <div class="author">
+                                    <a href="#">
+                                        <i class="fa fa-user"></i> Dr. Emily Rodriguez, Dr. James Wilson
+                                    </a>
+                                </div>
+                                <p>This longitudinal study examines how the shift to remote work has affected organizational culture across multiple industries. Findings suggest that while productivity metrics remain stable, significant changes in communication patterns and employee engagement have emerged...</p>
+                                <a class="btn btn-dark-gray" href="article-detail.html">Read Abstract</a>
+                                <small class="access-note">Full access for logged-in users</small>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Recent Articles Section -->
+
+    <!-- Start: Call to Action Section -->
+    <section class="community-testimonial">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Join Our Research Community</h2>
+                <span class="underline center"></span>
+                <p class="lead">Contribute to advancing knowledge in your field</p>
+            </div>
+            <div class="cta-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <p>We invite researchers, academics, and scholars to submit their work for publication in our peer-reviewed journals. Our streamlined submission process and rigorous review ensure your research reaches the global academic community.</p>
+                        <a href="submit.html" class="btn btn-primary btn-large">Submit Your Manuscript</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Call to Action Section -->
+
+    <!-- Start: News & Announcements -->
+    <section class="news-events section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="center-content">
+                    <h2 class="section-title">News & Announcements</h2>
+                    <span class="underline center"></span>
+                    <p class="lead">Updates on calls for papers, new issues, and academic events</p>
+                </div>
+                <div class="news-events-list">
+                    <div class="single-news-event">
+                        <figure>
+                            <img src="images/news-event/news-event-05.jpg" alt="Call for Papers" />
+                        </figure>
+                        <div class="content-block">
+                            <div class="member-info">
+                                <div class="content_meta_category">
+                                    <span class="arrow-right"></span>
+                                    <a href="#." rel="category tag">CALL FOR PAPERS</a>
+                                </div>
+                                <ul class="news-event-info">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fa fa-calendar"></i>
+                                            March 25, 2023
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fa fa-clock-o"></i>
+                                            Deadline: June 30, 2023
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3><a href=".html#">Special Issue on AI Ethics and Society</a></h3>
+                                <p>We are pleased to announce a special issue on Ethical Considerations in Artificial Intelligence. This issue will explore the societal impacts, ethical frameworks, and policy implications of AI technologies across various domains.</p>
+                                <a class="btn btn-primary" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-news-event">
+                        <figure>
+                            <img src="images/news-event/news-event-02.jpg" alt="New Journal" />
+                        </figure>
+                        <div class="content-block">
+                            <div class="member-info">
+                                <div class="content_meta_category">
+                                    <span class="arrow-right"></span>
+                                    <a href="#." rel="category tag">NEW JOURNAL</a>
+                                </div>
+                                <ul class="news-event-info">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fa fa-calendar"></i>
+                                            March 18, 2023
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h3><a href=".html#">Launch of Sustainable Development Journal</a></h3>
+                                <p>We're excited to announce the launch of our newest journal focusing on sustainable development practices and research. The journal will cover environmental sustainability, green technologies, and sustainable business practices.</p>
+                                <a class="btn btn-primary" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: News & Announcements -->
+
+    <!-- Start: Partners & Indexing -->
+    <section class="meet-staff-box section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="center-content">
+                    <h2 class="section-title">Indexed In & Partners</h2>
+                    <span class="underline center"></span>
+                    <p class="lead">Our journals are indexed in major academic databases and directories</p>
+                </div>
+                <div class="partners-container">
+                    <div class="partner-logos">
+                        <div class="partner-logo">
+                            <img src="images/doaj-logo.png" alt="DOAJ" />
+                            <span>Directory of Open Access Journals</span>
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/google-scholar-logo.png" alt="Google Scholar" />
+                            <span>Google Scholar</span>
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/crossref-logo.png" alt="Crossref" />
+                            <span>Crossref</span>
+                        </div>
+                        <div class="partner-logo">
+                            <img src="images/orcid-logo.png" alt="ORCID" />
+                            <span>ORCID</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Partners & Indexing -->
+
+    <!-- Start: Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div id="footer-widgets">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 widget-container">
+                        <div id="text-2" class="widget widget_text">
+                            <h3 class="footer-widget-title">About Repository</h3>
+                            <span class="underline left"></span>
+                            <div class="textwidget">
+                                The Karl Kumm University Journal Repository provides open access to high-quality scholarly research across multiple disciplines, advancing knowledge through global dissemination.
+                            </div>
+                            <address>
+                                <div class="info">
+                                    <i class="fa fa-location-arrow"></i>
+                                    <span>Karl Kumm University, Vom, Plateau State, Nigeria</span>
+                                </div>
+                                <div class="info">
+                                    <i class="fa fa-envelope"></i>
+                                    <span><a href="mailto:repository@kku.edu.ng">repository@kku.edu.ng</a></span>
+                                </div>
+                                <div class="info">
+                                    <i class="fa fa-phone"></i>
+                                    <span><a href="tel:012-345-6789">+ 012-345-6789</a></span>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 widget-container">
+                        <div id="nav_menu-2" class="widget widget_nav_menu">
+                            <h3 class="footer-widget-title">Quick Links</h3>
+                            <span class="underline left"></span>
+                            <div class="menu-quick-links-container">
+                                <ul id="menu-quick-links" class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="journals.html">Journals</a></li>
+                                    <li><a href="articles.html">Articles</a></li>
+                                    <li><a href="submit.html">Submit Manuscript</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-lg hidden-md hidden-xs tablet-margin-bottom"></div>
+                    <div class="col-md-3 col-sm-6 widget-container">
+                        <div id="text-4" class="widget widget_text">
+                            <h3 class="footer-widget-title">Policies</h3>
+                            <span class="underline left"></span>
+                            <div class="timming-text-widget">
+                                <ul>
+                                    <li><a href="#">Open Access Policy</a></li>
+                                    <li><a href="#">Submission Guidelines</a></li>
+                                    <li><a href="#">Peer Review Process</a></li>
+                                    <li><a href="#">Copyright Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>			
+                    </div>
+                    <div class="col-md-3 col-sm-6 widget-container">
+                        <div class="widget twitter-widget">
+                            <h3 class="footer-widget-title">Connect With Us</h3>
+                            <span class="underline left"></span>
+                            <div class="social-links-footer">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                            <div class="newsletter-footer">
+                                <h4>Subscribe to our Newsletter</h4>
+                                <form>
+                                    <input type="email" placeholder="Your email address" />
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>			
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-text col-md-6">
+                        <p>&copy; 2023 Karl Kumm University. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 pull-right">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="articles.html">Articles</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <!-- jQuery Latest Version 1.x -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    
+    <!-- jQuery UI -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    
+    <!-- jQuery Easing -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <!-- Mobile Menu -->
+    <script type="text/javascript" src="js/mmenu.min.js"></script>
+    
+    <!-- Harvey - State manager for media queries -->
+    <script type="text/javascript" src="js/harvey.min.js"></script>
+    
+    <!-- Waypoints - Load Elements on View -->
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+
+    <!-- Facts Counter -->
+    <script type="text/javascript" src="js/facts.counter.min.js"></script>
+
+    <!-- MixItUp - Category Filter -->
+    <script type="text/javascript" src="js/mixitup.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    
+    <!-- Accordion -->
+    <script type="text/javascript" src="js/accordion.min.js"></script>
+    
+    <!-- Responsive Tabs -->
+    <script type="text/javascript" src="js/responsive.tabs.min.js"></script>
+    
+    <!-- Responsive Table -->
+    <script type="text/javascript" src="js/responsive.table.min.js"></script>
+    
+    <!-- Masonry -->
+    <script type="text/javascript" src="js/masonry.min.js"></script>
+    
+    <!-- Carousel Swipe -->
+    <script type="text/javascript" src="js/carousel.swipe.min.js"></script>
+    
+    <!-- bxSlider -->
+    <script type="text/javascript" src="js/bxslider.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

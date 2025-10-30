@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>        
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+    <!-- Title -->
+    <title>Archive - Karl Kumm University Repository</title>
+
+    <!-- Favicon -->
+    <link href="karl-kumm-university-logo.png" rel="icon" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Mobile Menu -->
+    <link href="css/mmenu.css" rel="stylesheet" type="text/css" />
+    <link href="css/mmenu.positioning.css" rel="stylesheet" type="text/css" />
+
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="layout-v3">
+    
+    <!-- Start: Header Section -->
+    <header id="header" class="navbar-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="menu-wrap">
+                        <div class="navbar-header">
+                            <div class="navbar-brand">
+                                <h1>
+                                    <a href="index.html">
+                                        <img src="images/karl-kumm-university-logo.png" style="height:100px; width:80px" alt="Karl Kumm University" />
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- Navigation -->
+                        <div class="navbar-collapse hidden-sm hidden-xs">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="journals.html">Journals</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="articles.html">Articles</a>
+                                </li>
+                                <li class="dropdown active">
+                                    <a href="archive.html">Archive</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="login.html">Login/Register</a>
+                                </li>
+                            </ul>
+                            <!-- Header Topbar -->
+                            <div class="header-topbar hidden-md">
+                                <div class="topbar-links">
+                                    <a href="login.html"><i class="fa fa-lock"></i>Login / Register</a>
+                                    <span>|</span>
+                                    <div class="header-search">
+                                        <form action="search.html" method="get">
+                                            <input type="text" placeholder="Search archive..." name="query">
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Header Topbar -->
+                        </div>
+                        <div class="header-socialbar hidden-sm hidden-xs">
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-menu hidden-md hidden-lg">
+                        <a href="#mobile-menu"><i class="fa fa-navicon"></i></a>
+                        <div id="mobile-menu">
+                            <ul>
+                                <li class="mobile-title">
+                                    <h4>Navigation</h4>
+                                    <a href="#" class="close"></a>
+                                </li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="journals.html">Journals</a></li>
+                                <li><a href="articles.html">Articles</a></li>
+                                <li><a href="archive.html">Archive</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="login.html">Login/Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End: Header Section -->
+
+    <!-- Start: Page Banner -->
+    <section class="page-banner services-banner">
+        <div class="container">
+            <div class="banner-header">
+                <h2>Journal Archive</h2>
+                <span class="underline center"></span>
+                <p class="lead">Browse complete collections of all published journal issues</p>
+            </div>
+        </div>
+    </section>
+    <!-- End: Page Banner -->
+
+    <!-- Start: Archive Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Archive Navigation -->
+                <div class="col-md-3">
+                    <div class="archive-sidebar">
+                        <!-- Year Filter -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Browse by Year</h3>
+                            <div class="year-filter">
+                                <div class="filter-options">
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="all" checked> All Years
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2023"> 2023
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2022"> 2022
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2021"> 2021
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2020"> 2020
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2019"> 2019
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2018"> 2018
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2017"> 2017
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2016"> 2016
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="year" value="2015"> 2015
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Journal Filter -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Browse by Journal</h3>
+                            <div class="journal-filter">
+                                <div class="filter-options">
+                                    <label class="radio">
+                                        <input type="radio" name="journal" value="all" checked> All Journals
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="journal" value="jas"> Journal of Applied Sciences
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="journal" value="ibr"> International Business Review
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="journal" value="hsr"> Health Sciences Research
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="journal" value="ssq"> Social Studies Quarterly
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="journal" value="er"> Educational Research
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="journal" value="hr"> Humanities Review
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Archive Statistics -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Archive Statistics</h3>
+                            <div class="archive-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">8</div>
+                                    <div class="stat-label">Years of Archives</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">42</div>
+                                    <div class="stat-label">Journal Titles</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">325</div>
+                                    <div class="stat-label">Issues Published</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">12,500</div>
+                                    <div class="stat-label">Articles Archived</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Most Accessed -->
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Most Accessed</h3>
+                            <div class="most-accessed">
+                                <div class="accessed-item">
+                                    <h5>Journal of Applied Sciences</h5>
+                                    <p>Vol. 10, Issue 2 (2021)</p>
+                                    <small>2,450 downloads</small>
+                                </div>
+                                <div class="accessed-item">
+                                    <h5>Health Sciences Research</h5>
+                                    <p>Vol. 8, Issue 4 (2020)</p>
+                                    <small>1,890 downloads</small>
+                                </div>
+                                <div class="accessed-item">
+                                    <h5>International Business Review</h5>
+                                    <p>Vol. 12, Issue 1 (2022)</p>
+                                    <small>1,567 downloads</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Archive Content -->
+                <div class="col-md-9">
+                    <div class="archive-content">
+                        <!-- Archive Header -->
+                        <div class="archive-header">
+                            <div class="archive-stats">
+                                <p>Showing <strong>325 issues</strong> from <strong>42 journals</strong> (2015-2023)</p>
+                            </div>
+                            <div class="archive-sort">
+                                <label>Sort by:</label>
+                                <select class="form-control">
+                                    <option>Newest First</option>
+                                    <option>Oldest First</option>
+                                    <option>Journal Name (A-Z)</option>
+                                    <option>Most Accessed</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Journal Archive List -->
+                        <div class="journal-archive-list">
+                            <!-- Journal of Applied Sciences -->
+                            <div class="journal-archive" data-journal="jas">
+                                <div class="journal-header">
+                                    <div class="journal-info">
+                                        <h3>Journal of Applied Sciences</h3>
+                                        <p>ISSN: 1234-5678 | Published since 2015 | Quarterly</p>
+                                    </div>
+                                    <div class="journal-stats">
+                                        <span class="stat">42 Issues</span>
+                                        <span class="stat">1,250 Articles</span>
+                                        <span class="stat">45,000 Downloads</span>
+                                    </div>
+                                </div>
+
+                                <div class="issues-list">
+                                    <h4>2023 Issues</h4>
+                                    <div class="issues-grid">
+                                        <div class="issue-card">
+                                            <div class="issue-cover">
+                                                <img src="images/issue-cover-2023-3.jpg" alt="Volume 12 Issue 3">
+                                                <div class="issue-badge">Latest</div>
+                                            </div>
+                                            <div class="issue-info">
+                                                <h5>Volume 12, Issue 3</h5>
+                                                <p class="issue-date">March 2023</p>
+                                                <p class="issue-stats">15 Articles | 1,245 Downloads</p>
+                                                <div class="issue-actions">
+                                                    <a href="issue-detail.html" class="btn btn-primary">View Issue</a>
+                                                    <a href="#" class="btn btn-dark-gray"><i class="fa fa-download"></i> PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="issue-card">
+                                            <div class="issue-cover">
+                                                <img src="images/issue-cover-2023-2.jpg" alt="Volume 12 Issue 2">
+                                            </div>
+                                            <div class="issue-info">
+                                                <h5>Volume 12, Issue 2</h5>
+                                                <p class="issue-date">January 2023</p>
+                                                <p class="issue-stats">14 Articles | 987 Downloads</p>
+                                                <div class="issue-actions">
+                                                    <a href="issue-detail.html" class="btn btn-primary">View Issue</a>
+                                                    <a href="#" class="btn btn-dark-gray"><i class="fa fa-download"></i> PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="issue-card">
+                                            <div class="issue-cover">
+                                                <img src="images/issue-cover-2023-1.jpg" alt="Volume 12 Issue 1">
+                                            </div>
+                                            <div class="issue-info">
+                                                <h5>Volume 12, Issue 1</h5>
+                                                <p class="issue-date">October 2022</p>
+                                                <p class="issue-stats">16 Articles | 1,123 Downloads</p>
+                                                <div class="issue-actions">
+                                                    <a href="issue-detail.html" class="btn btn-primary">View Issue</a>
+                                                    <a href="#" class="btn btn-dark-gray"><i class="fa fa-download"></i> PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Previous Years Accordion -->
+                                    <div class="year-accordion">
+                                        <div class="accordion-item">
+                                            <button class="accordion-header">
+                                                2022 Issues (4 Issues)
+                                                <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <div class="accordion-content">
+                                                <div class="issues-grid compact">
+                                                    <div class="issue-card compact">
+                                                        <h6>Volume 11, Issue 4</h6>
+                                                        <p>July 2022 | 15 Articles</p>
+                                                        <a href="issue-detail.html" class="btn btn-sm btn-primary">View</a>
+                                                    </div>
+                                                    <div class="issue-card compact">
+                                                        <h6>Volume 11, Issue 3</h6>
+                                                        <p>April 2022 | 14 Articles</p>
+                                                        <a href="issue-detail.html" class="btn btn-sm btn-primary">View</a>
+                                                    </div>
+                                                    <div class="issue-card compact">
+                                                        <h6>Volume 11, Issue 2</h6>
+                                                        <p>January 2022 | 13 Articles</p>
+                                                        <a href="issue-detail.html" class="btn btn-sm btn-primary">View</a>
+                                                    </div>
+                                                    <div class="issue-card compact">
+                                                        <h6>Volume 11, Issue 1</h6>
+                                                        <p>October 2021 | 16 Articles</p>
+                                                        <a href="issue-detail.html" class="btn btn-sm btn-primary">View</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <button class="accordion-header">
+                                                2021 Issues (4 Issues)
+                                                <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <div class="accordion-content">
+                                                <!-- 2021 issues content -->
+                                                <p>Complete volume available for download</p>
+                                                <a href="#" class="btn btn-dark-gray">Download 2021 Volume (PDF)</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <button class="accordion-header">
+                                                2015-2020 Archive
+                                                <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <div class="accordion-content">
+                                                <div class="archive-downloads">
+                                                    <div class="download-option">
+                                                        <h6>Complete Journal Archive (2015-2023)</h6>
+                                                        <p>All issues in PDF format (2.5 GB)</p>
+                                                        <a href="#" class="btn btn-primary"><i class="fa fa-download"></i> Download ZIP</a>
+                                                    </div>
+                                                    <div class="download-option">
+                                                        <h6>By Year</h6>
+                                                        <div class="year-downloads">
+                                                            <a href="#">2020 Volume</a>
+                                                            <a href="#">2019 Volume</a>
+                                                            <a href="#">2018 Volume</a>
+                                                            <a href="#">2017 Volume</a>
+                                                            <a href="#">2016 Volume</a>
+                                                            <a href="#">2015 Volume</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- International Business Review -->
+                            <div class="journal-archive" data-journal="ibr">
+                                <div class="journal-header">
+                                    <div class="journal-info">
+                                        <h3>International Business Review</h3>
+                                        <p>ISSN: 2345-6789 | Published since 2016 | Bi-annual</p>
+                                    </div>
+                                    <div class="journal-stats">
+                                        <span class="stat">16 Issues</span>
+                                        <span class="stat">480 Articles</span>
+                                        <span class="stat">28,000 Downloads</span>
+                                    </div>
+                                </div>
+
+                                <div class="issues-list">
+                                    <h4>2023 Issues</h4>
+                                    <div class="issues-grid">
+                                        <div class="issue-card">
+                                            <div class="issue-cover">
+                                                <img src="images/issue-cover-ibr-2023-1.jpg" alt="Volume 8 Issue 1">
+                                                <div class="issue-badge">Latest</div>
+                                            </div>
+                                            <div class="issue-info">
+                                                <h5>Volume 8, Issue 1</h5>
+                                                <p class="issue-date">June 2023</p>
+                                                <p class="issue-stats">12 Articles | 856 Downloads</p>
+                                                <div class="issue-actions">
+                                                    <a href="issue-detail.html" class="btn btn-primary">View Issue</a>
+                                                    <a href="#" class="btn btn-dark-gray"><i class="fa fa-download"></i> PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="issue-card">
+                                            <div class="issue-cover">
+                                                <img src="images/issue-cover-ibr-2022-2.jpg" alt="Volume 7 Issue 2">
+                                            </div>
+                                            <div class="issue-info">
+                                                <h5>Volume 7, Issue 2</h5>
+                                                <p class="issue-date">December 2022</p>
+                                                <p class="issue-stats">11 Articles | 723 Downloads</p>
+                                                <div class="issue-actions">
+                                                    <a href="issue-detail.html" class="btn btn-primary">View Issue</a>
+                                                    <a href="#" class="btn btn-dark-gray"><i class="fa fa-download"></i> PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Previous Years Accordion -->
+                                    <div class="year-accordion">
+                                        <div class="accordion-item">
+                                            <button class="accordion-header">
+                                                2016-2022 Archive
+                                                <i class="fa fa-chevron-down"></i>
+                                            </button>
+                                            <div class="accordion-content">
+                                                <div class="archive-downloads">
+                                                    <div class="download-option">
+                                                        <h6>Complete Journal Archive (2016-2023)</h6>
+                                                        <p>All issues in PDF format (1.2 GB)</p>
+                                                        <a href="#" class="btn btn-primary"><i class="fa fa-download"></i> Download ZIP</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Health Sciences Research -->
+                            <div class="journal-archive" data-journal="hsr">
+                                <div class="journal-header">
+                                    <div class="journal-info">
+                                        <h3>Health Sciences Research</h3>
+                                        <p>ISSN: 3456-7890 | Published since 2017 | Quarterly</p>
+                                    </div>
+                                    <div class="journal-stats">
+                                        <span class="stat">24 Issues</span>
+                                        <span class="stat">720 Articles</span>
+                                        <span class="stat">38,000 Downloads</span>
+                                    </div>
+                                </div>
+
+                                <div class="issues-list">
+                                    <h4>2023 Issues</h4>
+                                    <div class="issues-grid">
+                                        <div class="issue-card">
+                                            <div class="issue-cover">
+                                                <img src="images/issue-cover-hsr-2023-2.jpg" alt="Volume 6 Issue 2">
+                                                <div class="issue-badge">Latest</div>
+                                            </div>
+                                            <div class="issue-info">
+                                                <h5>Volume 6, Issue 2</h5>
+                                                <p class="issue-date">April 2023</p>
+                                                <p class="issue-stats">18 Articles | 1,034 Downloads</p>
+                                                <div class="issue-actions">
+                                                    <a href="issue-detail.html" class="btn btn-primary">View Issue</a>
+                                                    <a href="#" class="btn btn-dark-gray"><i class="fa fa-download"></i> PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="issue-card">
+                                            <div class="issue-cover">
+                                                <img src="images/issue-cover-hsr-2023-1.jpg" alt="Volume 6 Issue 1">
+                                            </div>
+                                            <div class="issue-info">
+                                                <h5>Volume 6, Issue 1</h5>
+                                                <p class="issue-date">January 2023</p>
+                                                <p class="issue-stats">16 Articles | 892 Downloads</p>
+                                                <div class="issue-actions">
+                                                    <a href="issue-detail.html" class="btn btn-primary">View Issue</a>
+                                                    <a href="#" class="btn btn-dark-gray"><i class="fa fa-download"></i> PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Archive Pagination -->
+                        <div class="archive-pagination">
+                            <div class="pagination">
+                                <ul>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Archive Section -->
+
+    <!-- Start: Newsletter -->
+    <section class="newsletter section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="center-content">
+                        <h2 class="section-title">Stay Updated with New Issues</h2>
+                        <span class="underline center"></span>
+                        <p class="lead">Subscribe to receive notifications when new journal issues are published in our archive</p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Enter your Email!" id="newsletter" name="newsletter" type="email">
+                        <input class="form-control" value="Subscribe to Archive Updates" type="submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Newsletter -->
+
+    <!-- Start: Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div id="footer-widgets">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 widget-container">
+                        <div id="text-2" class="widget widget_text">
+                            <h3 class="footer-widget-title">About Repository</h3>
+                            <span class="underline left"></span>
+                            <div class="textwidget">
+                                The Karl Kumm University Journal Repository provides open access to high-quality scholarly research across multiple disciplines, advancing knowledge through global dissemination.
+                            </div>
+                            <address>
+                                <div class="info">
+                                    <i class="fa fa-location-arrow"></i>
+                                    <span>Karl Kumm University, Vom, Plateau State, Nigeria</span>
+                                </div>
+                                <div class="info">
+                                    <i class="fa fa-envelope"></i>
+                                    <span><a href="mailto:repository@kku.edu.ng">repository@kku.edu.ng</a></span>
+                                </div>
+                                <div class="info">
+                                    <i class="fa fa-phone"></i>
+                                    <span><a href="tel:012-345-6789">+ 012-345-6789</a></span>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 widget-container">
+                        <div id="nav_menu-2" class="widget widget_nav_menu">
+                            <h3 class="footer-widget-title">Quick Links</h3>
+                            <span class="underline left"></span>
+                            <div class="menu-quick-links-container">
+                                <ul id="menu-quick-links" class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="journals.html">Journals</a></li>
+                                    <li><a href="articles.html">Articles</a></li>
+                                    <li><a href="archive.html">Archive</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-lg hidden-md hidden-xs tablet-margin-bottom"></div>
+                    <div class="col-md-3 col-sm-6 widget-container">
+                        <div id="text-4" class="widget widget_text">
+                            <h3 class="footer-widget-title">Policies</h3>
+                            <span class="underline left"></span>
+                            <div class="timming-text-widget">
+                                <ul>
+                                    <li><a href="#">Open Access Policy</a></li>
+                                    <li><a href="#">Submission Guidelines</a></li>
+                                    <li><a href="#">Peer Review Process</a></li>
+                                    <li><a href="#">Copyright Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>			
+                    </div>
+                    <div class="col-md-3 col-sm-6 widget-container">
+                        <div class="widget twitter-widget">
+                            <h3 class="footer-widget-title">Connect With Us</h3>
+                            <span class="underline left"></span>
+                            <div id="twitter-feed">
+                                <ul>
+                                    <li>
+                                        <p><a href="#">@KKU_Repository</a> Explore our complete journal archive with 8 years of scholarly research across 42 journals. All content freely accessible. <a href="#">kku-repository.edu.ng</a></p>
+                                    </li>
+                                    <li>
+                                        <p><a href="#">@KKU_Repository</a> New archive feature: Download complete journal volumes by year. Perfect for researchers and libraries. <a href="#">kku-repository.edu.ng</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>			
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-text col-md-6">
+                        <p>&copy; 2023 Karl Kumm University. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 pull-right">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="journals.html">Journals</a></li>
+                            <li><a href="articles.html">Articles</a></li>
+                            <li><a href="archive.html">Archive</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <!-- jQuery Latest Version 1.x -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    
+    <!-- jQuery UI -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    
+    <!-- jQuery Easing -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <!-- Mobile Menu -->
+    <script type="text/javascript" src="js/mmenu.min.js"></script>
+    
+    <!-- Harvey - State manager for media queries -->
+    <script type="text/javascript" src="js/harvey.min.js"></script>
+    
+    <!-- Waypoints - Load Elements on View -->
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+
+    <!-- Facts Counter -->
+    <script type="text/javascript" src="js/facts.counter.min.js"></script>
+
+    <!-- MixItUp - Category Filter -->
+    <script type="text/javascript" src="js/mixitup.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    
+    <!-- Accordion -->
+    <script type="text/javascript" src="js/accordion.min.js"></script>
+    
+    <!-- Responsive Tabs -->
+    <script type="text/javascript" src="js/responsive.tabs.min.js"></script>
+    
+    <!-- Responsive Table -->
+    <script type="text/javascript" src="js/responsive.table.min.js"></script>
+    
+    <!-- Masonry -->
+    <script type="text/javascript" src="js/masonry.min.js"></script>
+    
+    <!-- Carousel Swipe -->
+    <script type="text/javascript" src="js/carousel.swipe.min.js"></script>
+    
+    <!-- bxSlider -->
+    <script type="text/javascript" src="js/bxslider.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Archive Page Script -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Year and Journal Filtering
+            $('input[name="year"], input[name="journal"]').change(function() {
+                const selectedYear = $('input[name="year"]:checked').val();
+                const selectedJournal = $('input[name="journal"]:checked').val();
+                
+                filterArchive(selectedYear, selectedJournal);
+            });
+
+            // Accordion functionality
+            $('.accordion-header').click(function() {
+                const accordionItem = $(this).closest('.accordion-item');
+                const accordionContent = accordionItem.find('.accordion-content');
+                const icon = $(this).find('i');
+                
+                // Toggle current item
+                accordionContent.slideToggle(300);
+                icon.toggleClass('fa-chevron-down fa-chevron-up');
+                
+                // Close other items
+                $('.accordion-item').not(accordionItem).find('.accordion-content').slideUp(300);
+                $('.accordion-item').not(accordionItem).find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            });
+
+            // Initialize first accordion as open
+            $('.accordion-item:first-child .accordion-content').show();
+            $('.accordion-item:first-child .accordion-header i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+
+            // Sort functionality
+            $('.archive-sort select').change(function() {
+                const sortBy = $(this).val();
+                sortArchive(sortBy);
+            });
+
+            // Filter function
+            function filterArchive(year, journal) {
+                $('.journal-archive').each(function() {
+                    const journalType = $(this).data('journal');
+                    const journalYears = $(this).find('.issues-list').data('years') || 'all';
+                    
+                    let showJournal = true;
+                    
+                    // Filter by journal
+                    if (journal !== 'all' && journalType !== journal) {
+                        showJournal = false;
+                    }
+                    
+                    // Filter by year (simplified - in real implementation, would check actual years)
+                    if (year !== 'all') {
+                        // This would be more sophisticated in a real implementation
+                        const hasYear = $(this).find(`[data-year="${year}"]`).length > 0;
+                        if (!hasYear) {
+                            showJournal = false;
+                        }
+                    }
+                    
+                    if (showJournal) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+
+            // Sort function
+            function sortArchive(sortBy) {
+                const archiveContainer = $('.journal-archive-list');
+                const archives = archiveContainer.children('.journal-archive').get();
+                
+                archives.sort(function(a, b) {
+                    const aTitle = $(a).find('.journal-info h3').text();
+                    const bTitle = $(b).find('.journal-info h3').text();
+                    const aLatest = $(a).find('.issue-badge').length > 0;
+                    const bLatest = $(b).find('.issue-badge').length > 0;
+                    
+                    switch(sortBy) {
+                        case 'Newest First':
+                            return bLatest - aLatest;
+                        case 'Oldest First':
+                            return aLatest - bLatest;
+                        case 'Journal Name (A-Z)':
+                            return aTitle.localeCompare(bTitle);
+                        case 'Most Accessed':
+                            // This would use actual access data in real implementation
+                            return Math.random() - 0.5;
+                        default:
+                            return 0;
+                    }
+                });
+                
+                $.each(archives, function(index, archive) {
+                    archiveContainer.append(archive);
+                });
+            }
+
+            // Download tracking
+            $('.btn-dark-gray').click(function(e) {
+                e.preventDefault();
+                const fileName = $(this).closest('.issue-card').find('h5').text();
+                alert(`In a real implementation, this would download: ${fileName}.pdf`);
+                // Here you would track the download in analytics
+            });
+        });
+    </script>
+
+</body>
+</html>
